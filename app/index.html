@@ -8,8 +8,84 @@
   </head>
   <body>
 
-    <h1></h1>
+    <div class="container">
 
+      <header class ="row">
+        <div class="col-md-1"><a><img class = "github-logo" src="images/GitHub-mark-64px.png" alt="" /></a></div>
+          <input class="col-md-3 header-input" type="text" class="form-control" placeholder="Search GitHub">
+            <div class="col-md-4">
+              <ul class ="header-actions">
+                <li><a href="#">Pull Requests</a></li>
+                <li><a href="#">Issues</a></li>
+                <li><a href="#">Gist</a></li>
+              </ul>
+            </div>
+              <div class="col-md-offset-2 bell"><a class ="glyphicon glyphicon-bell" href="#"></a></div>
+                <!-- Single button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    + <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- Single button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+      </header>
+
+      <div class="row">
+        <div class="col-md-3 profile-location">
+          <!-- profile template goes here -->
+
+        </div>
+        <div class="col-md-9">
+          <div id="repo-location">
+            <!-- repos go here -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4>Organizations</h4>
+          <ul id="organization-location">
+            <!-- organizations template goes here -->
+          </ul>
+      </div>
+
+    </div>
+
+    <script id="profile-template" type="text/x-handlebars-template">
+      <img class "avatar" src="{{avatar_url}}" alt="Avatar" />
+      <div class=""><h3>{{name}}</h3></div>
+      <div class="profile-name"><h4>{{login}}</h4></div>
+      <div class="">{{bio}}</div>
+      <div class=""><button class ="button-style" type="button" name="button">Edit Profile</button></div>
+      <div class="">{{location}}</div>
+      <div class=""><a href="#">{{email}}</a></div>
+      <div class=""><a href="#">{{blog}}</a></div>
+      <div class="">{{created_at}}</div>
+    </script>
+    <script id="repo-temp" type="text/x-handlebars-template">
+      <div class="col-md-8 repo-style"><a href="{{clone_url}}">{{name}}</a></div><div class="col-md-3"><span>{{language}}</span></div><div class="col-md-1"><span>{{stargazers_count}}</span></div><div class="col-md-6 descrip-style">{{description}}</div></div>
+    </script>
+    <script id="organization-template" type="text/x-handlebars-template">
+      <li><div>{{avatar_url}}</div></li>
+    </script>
     <script src="js/bundle.js"></script>
   </body>
 </html>

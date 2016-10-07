@@ -5,6 +5,10 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
+//Header background color #F5F5F5
+//new color #84D767
+//new border color #5CA941
+
 
 *,
 *::before,
@@ -14,4 +18,57 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 img {
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #F5F5F5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+header, a {
+  text-decoration: none;
+}
+
+.bell {
+  padding-top: 10px;
+  display: inline-block;
+}
+
+.github-logo {
+  padding-left: 10px;
+  height: 30px;
+}
+
+.header-actions, li {
+  padding-top: 5px;
+  display: inline-block;
+}
+
+.profile-name {
+  color: #666666;
+}
+
+.avatar {
+  border-radius: 3px;
+}
+
+.button-style {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.repo-style {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.descrip-style {
+  border-bottom: 1px solid #EEEEEE;
 }
