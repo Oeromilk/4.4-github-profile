@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 4 github profile</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header class ="row">
+        <div class="col-md-1"><a><img class = "github-logo" src="images/GitHub-mark-64px.png" alt="" /></a></div>
+          <input class="col-md-3 header-input" type="text" class="form-control" placeholder="Search GitHub">
+            <div class="col-md-4">
+              <ul class ="header-actions">
+                <li><a href="#">Pull Requests</a></li>
+                <li><a href="#">Issues</a></li>
+                <li><a href="#">Gist</a></li>
+              </ul>
+            </div>
+              <div class="col-md-offset-2 bell"><a class ="glyphicon glyphicon-bell" href="#"></a></div>
+                <!-- Single button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    + <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- Single button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+      </header>
+
+      <div class="row">
+        <div class="col-md-3 profile-location">
+          <!-- profile template goes here -->
+        </div>
+
+
+        <div class="col-md-9">
+          <div class="col-md-12 repo-nav">
+            <div class="col-md-2">
+              Overview
+            </div>
+            <div class="col-md-2 current-tab">
+              Repositories <span class="count-style">22</span>
+            </div>
+            <div class="col-md-2">
+              Stars <span class="count-style">1</span>
+            </div>
+            <div class="col-md-2">
+              Followers <span class="count-style">0</span>
+            </div>
+            <div class="col-md-2">
+              Following <span class="count-style">0</span>
+            </div>
+          </div>
+
+          <div class="col-md-12 repo-filter">
+            <input class="col-md-6 repo-input" type="text" class="form-control" placeholder="Search Repositories...">
+            <div class="col-md-1 btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle repo-nav-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Type: All <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-md-offset-1 btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle repo-nav-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language: All <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <button type="button" class="col-md-1 col-md-offset-1 btn btn-success glyphicon glyphicon-book">New</button>
+
+          </div>
+
+          <div id="repo-location">
+            <!-- repos go here -->
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-style">
+        <div class="row">
+
+            <div class="col-md-5">
+              <span>© 2016 GitHub, Inc.</span>
+              <span><a href="#">Terms</a></span>
+              <span><a href="#">Privacy</a></span>
+              <span><a href="#">security</a></span>
+              <span><a href="#">Status</a></span>
+              <span><a href="#">Help</a></span>
+            </div>
+            <div class="col-md-2">
+              <img src="images/GitHub-Mark-32px.png" alt="" />
+            </div>
+            <div class="col-md-5">
+              <span><a href="#">Contact GitHub</a></span>
+              <span><a href="#">API</a></span>
+              <span><a href="#">Training</a></span>
+              <span><a href="#">Shop</a></span>
+              <span><a href="#">Blog</a></span>
+              <span><a href="#">About</a></span>
+            </div>
+
+        </div>
+      </footer>
+
+
+    </div>
+
+    <script id="profile-template" type="text/x-handlebars-template">
+      <img class "avatar" src="{{avatar_url}}" alt="Avatar" />
+      <div class=""><h3>{{name}}</h3></div>
+      <div class="profile-name"><h4>{{login}}</h4></div>
+      <div class="">{{bio}}</div>
+      <div class="profile-border"><button class ="button-style" type="button" name="button">Edit Profile</button></div>
+      <div class="location-style botom-padding">{{location}}</div>
+      <div class="botom-padding"><a href="#">{{email}}</a></div>
+      <div class="botom-padding"><a href="#">{{blog}}</a></div>
+      <div class="botom-padding">Joined on Sep, 1 2015</div>
+      <h4 class ="org-border">Organizations</h4>
+      <div>
+        <img class="org-img-style" src="https://avatars.githubusercontent.com/u/20672988?v=3" alt="" />
+      </div>
+    </script>
+    <script id="repo-temp" type="text/x-handlebars-template">
+      <div class="col-md-12 repo-style"><div class="col-md-6"><a class = "link-style" href="{{clone_url}}">{{name}}</a></div><div class="col-md-4"><img class ="graph-image" src="https://shinypigeon.files.wordpress.com/2012/09/gold-line.png" alt="" /><span>{{language}}</span></div><div class="col-md-1"><span class ="glyphicon glyphicon-star">{{stargazers_count}}</span></div><div class="col-md-6 descrip">{{description}}</div></div>
+    </script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
