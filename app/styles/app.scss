@@ -16,6 +16,10 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
   box-sizing: border-box;
 }
 
+body {
+  word-wrap: break-word;
+}
+
 img {
   max-width: 100%;
 }
@@ -50,12 +54,61 @@ header, a {
   display: inline-block;
 }
 
+.repo-input {
+  height: 30px;
+}
+
+.repo-nav-button {
+  background-color: #F9F9F9;
+}
+
+.count-style {
+  background-color: #EEEEEE;
+  border-radius: 50%;
+  // border: 1px solid;
+}
+
+.repo-nav {
+  padding-top: 25px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.repo-filter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.current-tab {
+  padding-bottom: 23px;
+  border-bottom: 2px solid #C9510C;
+}
+
+.profile-border {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
 .profile-name {
   color: #666666;
 }
 
 .avatar {
-  border-radius: 3px;
+  border-radius: 3px solid transparent;
+}
+
+.location-style {
+  padding-top: 15px;
+}
+
+.botom-padding {
+  padding-bottom: 5px;
+}
+
+.org-border {
+  border-top: 1px solid #EEEEEE;
+  padding-top: 10px;
 }
 
 .button-style {
@@ -66,9 +119,30 @@ header, a {
 
 .repo-style {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.link-style {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.graph-image {
+  width: 150px;
+}
+
+.org-img-style{
+  height: 24px;
 }
 
 .descrip-style {
   border-bottom: 1px solid #EEEEEE;
+}
+
+.footer-style {
+  margin-top: 75px;
+  border-top: 1px solid #EEEEEE;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
